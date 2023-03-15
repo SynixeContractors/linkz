@@ -58,7 +58,7 @@ async fn redirect(req: Request<Body>) -> Result<Response<Body>, hyper::Error> {
 
 fn complex(link: &str) -> String {
     if link.starts_with("/certs/") {
-        format!("https://docs.synixe.contractors/#/{}", link)
+        format!("https://docs.synixe.contractors/#{}", link)
             .parse()
             .unwrap()
     } else {
