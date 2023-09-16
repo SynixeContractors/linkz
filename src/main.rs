@@ -39,6 +39,7 @@ async fn redirect(req: Request<Body>) -> Result<Response<Body>, hyper::Error> {
         "/twitter" => Some("https://twitter.com/SynixePMC"),
         "/github" => Some("https://github.com/SynixeContractors"),
         "/docs" => Some("https://docs.synixe.contractors"),
+        "/survey" => Some("https://docs.google.com/forms/d/e/1FAIpQLSf7-HwTWHU865c5aCwOT4t94d6i930JiS-lPTlyqa2cb0-55g/viewform?usp=sf_link"),
         "" => Some("https://synixe.contractors"),
         _ => None,
     };
